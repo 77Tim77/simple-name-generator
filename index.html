@@ -8,24 +8,29 @@
 </head>
 <body>
 
-    <h1>A Simple Fantasy Name Generator</h1>
+<div class="container">
 
+    <h1>Fantasy Name Generator</h1>
+
+    <p>Select Race:</p>
     <select id="race">
-    <option value="elf">Elf</option>
-    <option value="orc">Orc</option>
-    <option value="human">Human</option>
-    <option value="demon">Demon</option>
+        <option value="elf">Elf</option>
+        <option value="orc">Orc</option>
+        <option value="human">Human</option>
+        <option value="demon">Demon</option>
     </select>
 
+    <br><br>
+
     <button onclick="generateName()">Generate Name</button>
-
     <button onclick="generateList()">Generate 10 Names</button>
-
     <button onclick="copyName()">Copy Name</button>
 
-    <h2 id="name" class="name">Your name will appear here</h2>
+    <h2 id="name">Your name will appear here</h2>
 
     <div id="list"></div>
+
+</div>
 
     <script src="script.js"></script>
 
