@@ -29,6 +29,29 @@ name = name.charAt(0).toUpperCase() + name.slice(1);
 document.getElementById("name").innerText = name;
 
 }
+
+function generateList(){
+
+    let race = document.getElementById("race").value;
+
+    let output = "";
+
+    for(let i = 0; i < 10; i++) {
+
+        let part1 = names[race].first[Math.floor(Math.random()*names[race].first.length)]
+        let part2 = names[race].second[Math.floor(Math.random()*names[race].second.length)]
+
+        let name = part1 + part2;
+        name = name.charAt(0).toUpperCase() + name.slice(1);
+
+        output += race.toUpperCase() + ": " + name + "<br>";
+
+    }
+
+    document.getElementById("list").innerHTML = output
+}
+
+
 function copyName(){
 
 let name = document.getElementById("name").innerText;
